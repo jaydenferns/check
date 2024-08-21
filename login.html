@@ -42,7 +42,7 @@
             font-size: 16px;
         }
 
-        .login-container input[type="submit"] {
+        .login-container input[type="button"] {
             width: 100%;
             padding: 10px;
             margin: 20px 0;
@@ -54,7 +54,7 @@
             cursor: pointer;
         }
 
-        .login-container input[type="submit"]:hover {
+        .login-container input[type="button"]:hover {
             background-color: #777777;
         }
 
@@ -73,11 +73,11 @@
 
     <div class="login-container">
         <h2>Login</h2>
-        <!-- Redirecting to dashboard.html after login -->
-        <form action="web.html" method="get">
+        <form>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <!-- Use JavaScript to navigate -->
+            <input type="button" value="Login" onclick="location.href='web.html'">
         </form>
         <a href="#">Forgot your password?</a>
     </div>
