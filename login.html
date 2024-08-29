@@ -21,7 +21,7 @@
             const password = document.getElementById('password').value;
 
             // Send a POST request to the Netlify Function
-            fetch('/.netlify/functions/login', {
+            fetch('netlify/functions/login.js', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
