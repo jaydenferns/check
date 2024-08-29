@@ -4,8 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Hardcoded credentials for demonstration purposes
-    $validUsername = "admin";
-    $validPassword = "password123";
+    $validUsername = "Jayden";
+    $validPassword = "Jaydenferns";
 
     if ($username == $validUsername && $password == $validPassword) {
         // Redirect to the main website's homepage or dashboard after successful login
