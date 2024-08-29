@@ -4,11 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Hardcoded credentials for demonstration purposes
-    $validUsername = "Jayden";
-    $validPassword = "Jaydenferns";
+    $validUsername = "admin";
+    $validPassword = "password123";
 
     if ($username == $validUsername && $password == $validPassword) {
-        echo "Login successful. Welcome, " . htmlspecialchars($username) . "!";
+        // Redirect to the main website's homepage or dashboard after successful login
+        header("intex.html"); // Adjust this path as necessary
+        exit();
     } else {
         echo "Invalid username or password.";
     }
